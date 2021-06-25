@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bulma/css/bulma.min.css";
+
+.fix-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    overflow:hidden;
+}

@@ -1,27 +1,19 @@
-# ExemploOutputLogin
+# Angular - Exemplo de @Output() para compunicação entre componentes
+Este é um gerado pelo [Angular CLI](https://github.com/angular/angular-cli) versão 11.2.6.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+## Objetivo 
 
-## Development server
+Este é um pequeno projeto didático criado para exemplificar a comunicação entre componentes usando as diretivas @Input() e @Output, usando como pano-de-fundo um simulacro de um website onde realiza-se login/logout
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Detalhes
 
-## Code scaffolding
+O projeto foi desenvolvido usando a biblioteca [Bulma CSS](https://bulma.io/) para a estilização. Nenhum dos recursos das manipulações dos elementos está diretamente vinculado ao Bulma CSS, ou seja, você pode utilizar os conceitos aqui mostrados em qualquer projeto Angular.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O projeto consiste de três componentes base, o `app`, o `formulario` e `header`. Ao iniciar a página, o usuário se depara com uma página onde há uma opção no componente `header` de realizar o Login. Ao clicar no botão correspondente no dito componente, uma mensagem é enviada para o componente `app` para que exiba o componente `formulario`, com um simulacro de um formulário para digitar os campos de login e senha.
 
-## Build
+Quando o formulário é enviado (ao clicar no botão em `formulario` para **Logar**), o dito componente envia uma mensagem ao componente `app` para realizar o login junto, também, do nome do usuário (fixo nesta versão).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Como rodar?
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Entre na pasta do projeto e execute `ng serve` para acessar. Não se esqueça de usar o navegador para ir no endereço que aparecer na tela (em geral: http://localhost:4200)
